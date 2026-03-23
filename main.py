@@ -62,7 +62,7 @@ while True:
                         # SUCCESS: Valid selection made
                         job_to_delete = jobs_data[job_choice - 1]["job_name"]
                         conf = "yes".lower
-                        user_conf = input(f"Please type 'YES / NO' to confirm: ")
+                        user_conf = input(f"Please type 'YES / NO' to confirm: ").lower()
                         if "yes" in user_conf:
                             # Perform the actual deletion
                             jobs_data = manage_jobs.delete_job(jobs_data, job_to_delete)
@@ -82,8 +82,8 @@ while True:
 
 
             ##########################################################
-
-        elif choice == "3":  # View Job
+        # --- View Job ---
+        elif choice == "3":
             jobs_data = data.load_jobs()
 
             if not jobs_data:
@@ -115,6 +115,7 @@ while True:
                         data.save_jobs(jobs_data)
                         print(f"Job '{job_to_update}' updated successfully.")
                         input("\nPress Enter to return to the main menu...")
+                        break
                         
                     else:
                         print(f"!!! Error: Please enter a number between 1 and {len(jobs_data)}.")
