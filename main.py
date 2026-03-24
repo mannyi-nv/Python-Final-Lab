@@ -116,6 +116,7 @@ while True:
                 
                         job_to_update = jobs_data[job_choice - 1]["job_name"]
 
+                        # Using .strip() below to make sure user will not press backspace and enter which result in an empty owner, description value
                         new_owner = input("Please enter new owner (leave blank if no change is needed): ").strip()
                         new_description = input("Please enter new description (leave blank if no change is needed): ").strip()
 
