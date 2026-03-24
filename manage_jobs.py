@@ -1,5 +1,16 @@
 
 def add_job(job_number, job_name, owner, description):
+    #Docstring:
+    """
+    add_job dict items
+
+    Parameters:
+        job_number, job_name, owner,desciption
+
+    returns:
+        str dict type items saved to jobs.json
+        
+    """
     return {
         "job_number": job_number,
         "job_name": job_name,
@@ -9,8 +20,22 @@ def add_job(job_number, job_name, owner, description):
     }
 
 def delete_job(jobs, job_name):
+    #Docstring:
+    """
+    delete_job list items
+
+    use found = False as a place holder
+        if job (found) will switch False to True
+            delete jobs
+        else
+            no jobs, (found) is False, error will display to user
+
+        returns:
+            list type items removed from jobs.json
+        
+    """
     updated_jobs = []
-    found = False
+    found = False 
     for job in jobs:
         if job["job_name"] != job_name:
             updated_jobs.append(job)
@@ -21,9 +46,17 @@ def delete_job(jobs, job_name):
     return updated_jobs
 
 def update_job(jobs, job_name, new_owner=None, new_description=None):
+    #Docstring:
     """
-    Update owner and/or description of a job in the jobs list.
-    Returns the updated list.
+    use found = False as a place holder
+        if job (found) will switch False to True
+            update jobs
+        else
+            no jobs, (found) is False, error will display to user
+
+        returns:
+            return updated jobs list  
+    
     """
     found = False
     for job in jobs:
@@ -37,4 +70,5 @@ def update_job(jobs, job_name, new_owner=None, new_description=None):
     if not found:
         print(f"Job '{job_name}' not found.")
     return jobs
+
 

@@ -1,5 +1,8 @@
 def menu():
-    print("\n--- Jenkins Job Manager Main Menu ---")
+    print("\nJenkins Job Manager Main Menu:")
+    define = (f"Jenkins Job Manager Main Menu:")
+    print("=" * len(define))
+    print()
     print("1. Add jobs")
     print("2. Delete jobs")
     print("3. Update jobs")
