@@ -27,7 +27,7 @@ while True:
                 owner = input(f"Enter owner for: {job_name} ")
                 description = input(f"Enter description for: {job_name} ")
 
-                new_job = manage_jobs.add_job(job_number, job_name, owner, description)
+                new_job = manage_jobs.add_job(job_name, owner, description)
                 jobs_data.append(new_job)
 
             # Save all jobs

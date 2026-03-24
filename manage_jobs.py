@@ -1,18 +1,17 @@
 
-def add_job(job_number, job_name, owner, description):
+def add_job(job_name, owner, description):
     #Docstring:
     """
     add_job dict items
 
     Parameters:
-        job_number, job_name, owner,desciption
+        job_name, owner,desciption
 
     returns:
         str dict type items saved to jobs.json
         
     """
     return {
-        "job_number": job_number,
         "job_name": job_name,
         "owner": owner,
         "description": description,
