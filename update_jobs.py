@@ -51,5 +51,5 @@ def up_jobs():
                 print(f"\nPlease enter a number between 1 and {len(jobs_data)}.")             
         
 
-        except Exception as e:
-            print(f" invalid choice:------------ {e}")
+        except Exception:
+            print(f"\nError: Invalid input. Please enter a valid number")
