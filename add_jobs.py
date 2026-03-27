@@ -14,7 +14,7 @@ def add_jobs():
                 break # going back to the main menu
             
         except ValueError:  
-            print("\nPlease enter a valid number.")
+            print("\nError: Invalid input. Please enter a valid number")
             continue
 
         for i in range(jobs_counter):
