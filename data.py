@@ -19,5 +19,3 @@ def save_jobs(jobs, filename="jobs.json"):
         print("Jobs saved successfully.")
     except Exception as e:
         print(f"Error saving jobs: {e}")
-
-
