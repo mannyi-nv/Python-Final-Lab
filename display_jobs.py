@@ -1,5 +1,4 @@
 import data
-# import manage_jobs
 
 def list_jobs():
     while True:
@@ -21,13 +20,3 @@ def list_jobs():
         
         except Exception as e:
             print(e)
-                 
-
-        # ##### Exit #####
-        # elif choice == "6":
-        #     print("Exiting...")
-        #     break
-
-        # ##### Invalid choice #####
-        # else:
-        #     print("Invalid menu option. Please choose a number between 1-6.")

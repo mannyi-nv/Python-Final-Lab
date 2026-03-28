@@ -69,5 +69,3 @@ def update_job(jobs, job_name, new_owner=None, new_description=None):
     if not found:
         print(f"Job '{job_name}' not found.")
     return jobs
-
-
