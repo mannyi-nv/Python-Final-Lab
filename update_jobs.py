@@ -7,7 +7,7 @@ def up_jobs():
         jobs_data = data.load_jobs()
 
         if not jobs_data:
-            print("No jobs to update.")
+            print("\nERROR!!! No jobs to update, going back to main menu")
             break
                 
         print("\nExisting Jobs list:")

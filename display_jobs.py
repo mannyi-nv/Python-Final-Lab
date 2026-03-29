@@ -5,7 +5,7 @@ def list_jobs():
         jobs_data = data.load_jobs()
 
         if not jobs_data:
-            print("No jobs to display.")
+            print("\nERROR!!!No jobs to display, going back to main menu")
             break
                     
         try:

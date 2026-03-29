@@ -7,8 +7,8 @@ def add_jobs():
         jobs_data = data.load_jobs()
         
         try:
-            print("Type 0 to cancel and return to the main menu")
             jobs_counter = int(input("\nPlease enter how many jobs to create: "))
+            print("you can type 0 to cancel and return to the main menu at any time")
             if jobs_counter == 0:
                 print("Operation canceled. Returning to main menu.")
                 break # going back to the main menu

@@ -7,7 +7,7 @@ def del_jobs():
         jobs_data = data.load_jobs()
         
         if not jobs_data:
-            print("No jobs to delete, going back to main menu")
+            print("\nERROR!!! No jobs to delete, going back to main menu")
             break
 
         print("\nExisting Jobs list:")
